@@ -19,6 +19,7 @@ public class TFIDFTest extends BaseTest {
 
     @Test
     public void test() {
+        /*
         List<Row> data = Arrays.asList(
                 RowFactory.create(0.0, "Hi I heard about Spark"),
                 RowFactory.create(0.0, "I wish Java could use case classes"),
@@ -56,6 +57,6 @@ public class TFIDFTest extends BaseTest {
         System.out.println("Features:\n");
         System.out.println(rescaledData.select("label", "features").collectAsList());
         System.out.println("----------------");
+        */
     }
-
 }
