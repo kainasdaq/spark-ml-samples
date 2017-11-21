@@ -17,6 +17,18 @@ public class SparkContextConfiguration {
 
     @Bean
     public SparkSession sparkSession() {
+        System.out.println("====== master: " + master);
+        System.out.println("====== applicationName: " + applicationName);
+        System.out.println("====== coresMax: " + coresMax);
+        System.out.println("====== driverMemory: " + driverMemory);
+        System.out.println("====== executorMemory: " + executorMemory);
+        System.out.println("====== serializer: " + serializer);
+        System.out.println("====== kryoserializerBufferMax: " + kryoserializerBufferMax);
+        System.out.println("====== sqlShufflePartitions: " + sqlShufflePartitions);
+        System.out.println("====== defaultParallelism: " + defaultParallelism);
+        for (String s : distributedLibraries)
+            System.out.println("====== " + s);
+
         SparkConf sparkConf = new SparkConf()
                 .setMaster(master)
                 .setAppName(applicationName)
